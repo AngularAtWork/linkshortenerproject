@@ -70,7 +70,7 @@ export default async function Home() {
           </div>
         </div>
       </main>
-      <footer className="mt-3 px-4 pb-4 pt-2 text-center text-xs text-zinc-600 dark:text-zinc-400 sm:mt-4 sm:px-6 sm:py-4 sm:text-sm">
+      <footer className="mt-3 flex grow-[0.25] items-end justify-center px-4 pb-4 pt-2 text-center text-xs text-zinc-600 dark:text-zinc-400 sm:mt-4 sm:px-6 sm:py-4 sm:text-sm">
         © {new Date().getFullYear()} Link Shortener. All rights reserved.
       </footer>
     </div>
