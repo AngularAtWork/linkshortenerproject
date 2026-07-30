@@ -12,8 +12,8 @@ export default async function Home() {
 
   // Show landing page for unauthenticated users
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-black">
-      <main className="flex flex-col items-center justify-center px-6 py-12 text-center max-w-4xl">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-black">
+      <main className="mx-auto flex flex-1 max-w-4xl flex-col items-center justify-center px-6 py-12 text-center">
         <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-primary/10">
           <Link2 className="w-8 h-8 text-primary" />
         </div>
@@ -70,6 +70,9 @@ export default async function Home() {
           </div>
         </div>
       </main>
+      <footer className="px-6 py-4 text-center text-sm text-zinc-600 dark:text-zinc-400">
+        © {new Date().getFullYear()} Link Shortener. All rights reserved.
+      </footer>
     </div>
   );
 }
