@@ -12,17 +12,17 @@ export default async function Home() {
 
   // Show landing page for unauthenticated users
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-black">
-      <main className="mx-auto flex flex-1 max-w-4xl flex-col items-center justify-center px-6 py-12 text-center">
-        <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-primary/10">
+    <div className="flex h-screen max-w-full flex-col overflow-hidden bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-black">
+      <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-between px-6 py-4 text-center sm:py-8">
+        <div className="flex items-center justify-center h-14 w-14 rounded-full bg-primary/10 sm:h-16 sm:w-16">
           <Link2 className="w-8 h-8 text-primary" />
         </div>
 
-        <h1 className="text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6">
+        <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
           Shorten Your Links
         </h1>
 
-        <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl">
+        <p className="max-w-2xl text-base text-zinc-600 dark:text-zinc-400 sm:text-xl">
           Create short, memorable links in seconds. Track clicks, manage your
           links, and share them with the world.
         </p>
@@ -41,7 +41,7 @@ export default async function Home() {
           </SignUpButton>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div className="grid w-full grid-cols-1 gap-4 text-left sm:gap-6 md:grid-cols-3">
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-lg text-zinc-900 dark:text-zinc-50">
               Fast & Simple
@@ -70,7 +70,7 @@ export default async function Home() {
           </div>
         </div>
       </main>
-      <footer className="px-6 py-4 text-center text-sm text-zinc-600 dark:text-zinc-400">
+      <footer className="px-4 pb-4 pt-2 text-center text-xs text-zinc-600 dark:text-zinc-400 sm:px-6 sm:py-4 sm:text-sm">
         © {new Date().getFullYear()} Link Shortener. All rights reserved.
       </footer>
     </div>
