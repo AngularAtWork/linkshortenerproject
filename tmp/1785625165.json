@@ -1,0 +1,11 @@
+{
+  "sessionId": "sidekick-github-context-memory-1785625162453",
+  "timestamp": 1785625165546,
+  "cwd": "C:\\Users\\tr2pr\\repos\\Udemy\\GitHub Copilot 2\\linkshortenerproject",
+  "toolName": "read_memories",
+  "toolArgs": "{}",
+  "toolResult": {
+    "resultType": "success",
+    "textResultForLlm": "No memories available for this repository or user."
+  }
+}

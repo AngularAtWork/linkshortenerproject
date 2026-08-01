@@ -1,6 +1,6 @@
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
-import { Link2 } from "lucide-react";
+import { LayoutDashboard, Link2, Shield, Zap } from "lucide-react";
 import { redirect } from "next/navigation";
 
 export default async function Home() {
@@ -24,8 +24,8 @@ export default async function Home() {
           </h1>
 
           <p className="max-w-2xl mb-[30px] text-base text-zinc-600 dark:text-zinc-400 sm:text-xl">
-            Create short, memorable links in seconds. Track clicks, manage your
-            links, and share them with the world.
+            Create short, memorable links in seconds. Manage your links and
+            share them with the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <SignInButton mode="modal">
@@ -44,6 +44,7 @@ export default async function Home() {
 
         <div className="grid w-full grid-cols-1 gap-4 text-left sm:gap-6 md:grid-cols-3">
           <div className="flex flex-col gap-2">
+            <Zap className="h-6 w-6 text-primary" />
             <h3 className="font-semibold text-lg text-zinc-900 dark:text-zinc-50">
               Fast & Simple
             </h3>
@@ -53,15 +54,17 @@ export default async function Home() {
           </div>
 
           <div className="flex flex-col gap-2">
+            <LayoutDashboard className="h-6 w-6 text-primary" />
             <h3 className="font-semibold text-lg text-zinc-900 dark:text-zinc-50">
-              Track Performance
+              Easy Management
             </h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              Monitor clicks and engagement on all your links
+              Organize and manage all your shortened links in one place
             </p>
           </div>
 
           <div className="flex flex-col gap-2">
+            <Shield className="h-6 w-6 text-primary" />
             <h3 className="font-semibold text-lg text-zinc-900 dark:text-zinc-50">
               Secure & Reliable
             </h3>
