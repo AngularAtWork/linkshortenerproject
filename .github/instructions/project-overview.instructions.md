@@ -1,3 +1,7 @@
+---
+description: Overview of the URL shortener project, including tech stack, structure, and key features.
+---
+
 # Project Overview
 
 ## Project Description

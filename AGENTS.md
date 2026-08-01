@@ -2,30 +2,6 @@
 
 This file provides guidance for LLM agents working on the Link Shortener project.
 
----
-
-## ⚠️ CRITICAL REQUIREMENT ⚠️
-
-**BEFORE GENERATING ANY CODE, YOU MUST:**
-
-1. **READ the relevant documentation file(s) from the `/docs` directory**
-2. **UNDERSTAND the patterns, standards, and examples provided**
-3. **FOLLOW the established conventions exactly**
-
-**This is NOT optional. This is NOT a suggestion. This is a MANDATORY requirement.**
-
-Failure to read the documentation BEFORE coding will result in code that doesn't meet project standards and will need to be rewritten.
-
----
-
-## Quick Start
-
-All detailed coding standards and guidelines are located in the `/docs` directory. **You MUST read the relevant .md file(s) BEFORE generating any code:**
-
-- **[Project Overview](./docs/01-project-overview.md)** - Tech stack, project structure, features
-- **[Authentication](./docs/02-authentication.md)** - Clerk authentication, protected routes, auth flow
-- **[UI Components](./docs/03-ui-components.md)** - shadcn/ui usage, component standards, customization
-
 ## Core Principles
 
 ### 1. Type Safety First
@@ -88,16 +64,13 @@ Routes:         kebab-case        (/user-settings)
 
 **⚠️ STOP! Before writing ANY code, you MUST complete these steps in order:**
 
-1. 🔴 **READ the relevant `/docs` file(s)** - This is MANDATORY and MUST be done FIRST
-2. ✅ Review similar existing code for patterns
-3. ✅ Ensure type safety and error handling
-4. ✅ Consider mobile, dark mode, and accessibility
-5. ✅ Test both authenticated and unauthenticated states
+1. ✅ Review similar existing code for patterns
+2. ✅ Ensure type safety and error handling
+3. ✅ Consider mobile, dark mode, and accessibility
+4. ✅ Test both authenticated and unauthenticated states
 
 **Remember:** Writing code without first reading the documentation is not acceptable and will result in non-compliant code that must be rewritten.
 
 ## Need More Details?
-
-**Read the comprehensive documentation in the `/docs` directory BEFORE writing code.** Each file provides detailed examples, patterns, and best practices for specific areas of the project.
 
 **Remember: Documentation first, code second. Always.**
